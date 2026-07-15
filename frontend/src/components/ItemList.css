@@ -1,0 +1,45 @@
+.item-container {
+  padding: 2rem;
+  background: #ffffff;
+  border: 2px solid #111111;
+  color: #111111;
+  margin-top: 2rem;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.item-card {
+  background: #ffffff;
+  border: 2px solid #111111;
+  padding: 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.item-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 #111111;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  color: #111111;
+  font-weight: 900;
+}
